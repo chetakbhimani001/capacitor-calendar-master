@@ -13,7 +13,7 @@ export interface DeleteEventOptions {
   [key: string]: string;
 }
 
-export interface CapacitorCalendarPlugin {
+export interface CapacitorCalendar {
   pluginName: string
   openCalendar(options?: { date: number }): Promise<any>
   createEvent(options: CalendarEventOptions): Promise<any>

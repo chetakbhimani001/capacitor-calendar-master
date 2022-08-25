@@ -1,14 +1,14 @@
 import { Plugins } from '@capacitor/core';
 declare module '@capacitor/core' {
   interface PluginRegistry {
-    CapacitorCalendar: CapacitorCalendarPlugin;
+    CapacitorCalendar: CapacitorCalendar;
   }
 }
-import type { CapacitorCalendarPlugin } from './definitions';
+import type { CapacitorCalendar } from './definitions';
 
 export * from './definitions';
 
-export declare const Calendar: CapacitorCalendarPlugin;
+export declare const Calendar: CapacitorCalendar;
 
 
 
