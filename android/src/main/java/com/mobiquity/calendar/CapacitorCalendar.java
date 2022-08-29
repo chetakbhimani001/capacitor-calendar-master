@@ -421,14 +421,14 @@ public class CapacitorCalendar extends Plugin {
                                 selection += " AND ";
                             }
                             selection += " deleted = 0 AND " + Events.DTSTART  + " >= ?";
-                            selectionList.add("%" + startFromParam + "%");
+                            selectionList.add("" + startFromParam + "");
                         }
                         if (startToParam != null) {
                             if (!TextUtils.isEmpty(selection)) {
                                 selection += " AND ";
                             }
                             selection += " deleted = 0 AND " + Events.DTEND + " <= ?";
-                            selectionList.add("%" + startToParam + "%");
+                            selectionList.add("" + startToParam + "");
                         }
                     }
                     String[] selectionArgs = new String[selectionList.size()];
